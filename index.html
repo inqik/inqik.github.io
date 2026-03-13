@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InQik - Google Business Profile Security + Management for Local Businesses</title>
+  <meta name="description" content="InQik provides fully managed Google Business Profile security and management for local businesses. Profile optimization, review response, local rank tracking, fake review protection, and competitor monitoring. Plans from $99/mo.">
+  <meta name="keywords" content="Google Business Profile management, local SEO, Google Maps optimization, review management, rank tracking, GBP security, fake review protection, local business marketing">
+  <meta name="author" content="InQik">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://inqik.com">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="InQik - Google Business Profile Security + Management">
+  <meta property="og:description" content="Fully managed Google Business Profile optimization, review response, rank tracking, and protection for local businesses worldwide.">
+  <meta property="og:url" content="https://inqik.com">
+  <meta property="og:site_name" content="InQik">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="InQik - Google Business Profile Security + Management">
+  <meta name="twitter:description" content="Fully managed Google Business Profile optimization, review response, rank tracking, and protection for local businesses worldwide.">
+
+  <style>
+    :root {
+      --blue-900: #0f1d3d;
+      --blue-800: #1e3a6e;
+      --blue-700: #1e40af;
+      --blue-600: #2563eb;
+      --blue-100: #dbeafe;
+      --blue-50: #eff6ff;
+      --gray-900: #111827;
+      --gray-700: #374151;
+      --gray-600: #4b5563;
+      --gray-500: #6b7280;
+      --gray-300: #d1d5db;
+      --gray-200: #e5e7eb;
+      --gray-100: #f3f4f6;
+      --gray-50: #f9fafb;
+      --green-600: #059669;
+      --green-100: #d1fae5;
+      --amber-500: #f59e0b;
+      --amber-100: #fef3c7;
+      --red-500: #ef4444;
+      --red-100: #fee2e2;
+      --white: #ffffff;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, 'Helvetica Neue', sans-serif;
+      color: var(--gray-700);
+      line-height: 1.7;
+      background: var(--white);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ---- HERO ---- */
+    .hero {
+      background: linear-gradient(135deg, var(--blue-900) 0%, var(--blue-800) 50%, var(--blue-700) 100%);
+      color: var(--white);
+      padding: 80px 24px 64px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle at 30% 40%, rgba(255,255,255,0.03) 0%, transparent 60%);
+    }
+    .hero-inner { max-width: 720px; margin: 0 auto; position: relative; z-index: 1; }
+    .hero-badge {
+      display: inline-block;
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 100px;
+      padding: 6px 18px;
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+      margin-bottom: 24px;
+      color: rgba(255,255,255,0.85);
+    }
+    .hero h1 {
+      font-size: clamp(2em, 5vw, 3em);
+      font-weight: 800;
+      line-height: 1.15;
+      margin-bottom: 16px;
+      letter-spacing: -0.5px;
+    }
+    .hero h1 span { color: var(--amber-500); }
+    .hero p {
+      font-size: 1.15em;
+      color: rgba(255,255,255,0.75);
+      max-width: 560px;
+      margin: 0 auto 32px;
+      line-height: 1.7;
+    }
+    .hero-stats {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+      margin-top: 40px;
+      padding-top: 32px;
+      border-top: 1px solid rgba(255,255,255,0.1);
+    }
+    .hero-stat { text-align: center; }
+    .hero-stat .num { font-size: 1.8em; font-weight: 800; color: var(--white); }
+    .hero-stat .label { font-size: 12px; color: rgba(255,255,255,0.55); margin-top: 2px; text-transform: uppercase; letter-spacing: 1px; }
+
+    .hero-cta {
+      display: inline-block;
+      background: var(--amber-500);
+      color: var(--blue-900);
+      padding: 14px 36px;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 1em;
+      text-decoration: none;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .hero-cta:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(245,158,11,0.3); }
+
+    /* ---- LAYOUT ---- */
+    .container { max-width: 900px; margin: 0 auto; padding: 0 24px; }
+    section { padding: 72px 0; }
+    section:nth-child(even) { background: var(--gray-50); }
+
+    .section-badge {
+      display: inline-block;
+      background: var(--blue-50);
+      color: var(--blue-700);
+      padding: 4px 14px;
+      border-radius: 100px;
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 12px;
+    }
+
+    h2 {
+      font-size: 1.8em;
+      font-weight: 800;
+      color: var(--gray-900);
+      margin-bottom: 8px;
+      letter-spacing: -0.3px;
+    }
+    .section-subtitle {
+      color: var(--gray-500);
+      font-size: 1.05em;
+      max-width: 600px;
+      margin-bottom: 40px;
+    }
+
+    /* ---- SERVICE CARDS ---- */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+    .service-card {
+      background: var(--white);
+      border: 1px solid var(--gray-200);
+      border-radius: 14px;
+      padding: 28px;
+      transition: box-shadow 0.3s, border-color 0.3s;
+    }
+    .service-card:hover {
+      box-shadow: 0 8px 32px rgba(0,0,0,0.06);
+      border-color: var(--blue-600);
+    }
+    .service-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      margin-bottom: 16px;
+    }
+    .service-card h3 {
+      font-size: 1.1em;
+      font-weight: 700;
+      color: var(--gray-900);
+      margin-bottom: 8px;
+    }
+    .service-card p { font-size: 0.92em; color: var(--gray-600); line-height: 1.65; }
+
+    /* ---- PRICING ---- */
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+    @media (max-width: 640px) { .pricing-grid { grid-template-columns: 1fr; } }
+
+    .plan-card {
+      border: 1px solid var(--gray-200);
+      border-radius: 16px;
+      padding: 36px;
+      background: var(--white);
+      position: relative;
+    }
+    .plan-card.featured {
+      border-color: var(--blue-600);
+      box-shadow: 0 0 0 1px var(--blue-600), 0 12px 40px rgba(37,99,235,0.1);
+    }
+    .plan-badge {
+      position: absolute;
+      top: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--blue-600);
+      color: var(--white);
+      padding: 4px 16px;
+      border-radius: 100px;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .plan-card h3 { font-size: 1.2em; font-weight: 700; color: var(--gray-900); margin-bottom: 4px; }
+    .plan-price { font-size: 2.4em; font-weight: 800; color: var(--blue-700); margin: 8px 0 4px; }
+    .plan-price span { font-size: 0.4em; font-weight: 500; color: var(--gray-500); }
+    .plan-annual { font-size: 0.85em; color: var(--green-600); margin-bottom: 20px; }
+    .plan-features { list-style: none; padding: 0; }
+    .plan-features li {
+      padding: 8px 0;
+      font-size: 0.9em;
+      color: var(--gray-600);
+      border-bottom: 1px solid var(--gray-100);
+      padding-left: 24px;
+      position: relative;
+    }
+    .plan-features li::before {
+      content: '✓';
+      position: absolute;
+      left: 0;
+      color: var(--green-600);
+      font-weight: 700;
+    }
+    .plan-features li:last-child { border-bottom: none; }
+
+    /* ---- HOW IT WORKS ---- */
+    .steps { counter-reset: step; }
+    .step {
+      display: flex;
+      gap: 24px;
+      margin-bottom: 32px;
+      align-items: flex-start;
+    }
+    .step-num {
+      flex-shrink: 0;
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      background: var(--blue-50);
+      color: var(--blue-700);
+      font-weight: 800;
+      font-size: 1.1em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .step-content h3 { font-size: 1.05em; font-weight: 700; color: var(--gray-900); margin-bottom: 4px; }
+    .step-content p { font-size: 0.92em; color: var(--gray-600); }
+
+    /* ---- INDUSTRIES ---- */
+    .industries-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .industry-tag {
+      background: var(--white);
+      border: 1px solid var(--gray-200);
+      border-radius: 100px;
+      padding: 8px 20px;
+      font-size: 0.88em;
+      color: var(--gray-700);
+      font-weight: 500;
+    }
+
+    /* ---- PROTECTION ---- */
+    .protection-box {
+      background: linear-gradient(135deg, var(--gray-900) 0%, #1e293b 100%);
+      border-radius: 16px;
+      padding: 40px;
+      color: var(--white);
+      margin-top: 40px;
+    }
+    .protection-box h3 { font-size: 1.3em; margin-bottom: 12px; }
+    .protection-box p { color: rgba(255,255,255,0.7); font-size: 0.95em; margin-bottom: 20px; }
+    .threat-list { list-style: none; padding: 0; }
+    .threat-list li {
+      padding: 10px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      font-size: 0.9em;
+      color: rgba(255,255,255,0.8);
+      padding-left: 28px;
+      position: relative;
+    }
+    .threat-list li::before {
+      content: '🛡';
+      position: absolute;
+      left: 0;
+    }
+
+    /* ---- FAQ ---- */
+    .faq-item { border-bottom: 1px solid var(--gray-200); padding: 20px 0; }
+    .faq-item:last-child { border-bottom: none; }
+    .faq-q { font-weight: 700; color: var(--gray-900); font-size: 1em; margin-bottom: 6px; }
+    .faq-a { color: var(--gray-600); font-size: 0.92em; }
+
+    /* ---- LINKS ---- */
+    .links-section {
+      background: var(--blue-50);
+      border: 1px solid var(--blue-100);
+      border-radius: 16px;
+      padding: 36px;
+      margin-top: 40px;
+    }
+    .links-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 12px;
+    }
+    .link-item {
+      display: block;
+      padding: 12px 16px;
+      background: var(--white);
+      border: 1px solid var(--gray-200);
+      border-radius: 10px;
+      text-decoration: none;
+      color: var(--blue-700);
+      font-weight: 600;
+      font-size: 0.9em;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    .link-item:hover {
+      border-color: var(--blue-600);
+      box-shadow: 0 4px 12px rgba(37,99,235,0.08);
+    }
+    .link-item .link-label { display: block; font-size: 0.75em; color: var(--gray-500); font-weight: 400; margin-bottom: 2px; }
+
+    /* ---- FOOTER ---- */
+    footer {
+      background: var(--gray-900);
+      color: rgba(255,255,255,0.5);
+      text-align: center;
+      padding: 32px 24px;
+      font-size: 0.85em;
+    }
+    footer a { color: rgba(255,255,255,0.7); text-decoration: none; }
+    footer a:hover { color: var(--white); }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "InQik",
+    "url": "https://inqik.com",
+    "description": "Google Business Profile management company serving local businesses worldwide",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+1-276-300-3233",
+      "contactType": "customer service"
+    },
+    "sameAs": [
+      "https://www.youtube.com/@InQik",
+      "https://www.linkedin.com/company/inqik",
+      "https://www.facebook.com/InQik.com",
+      "https://www.instagram.com/InQikHQ"
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-inner">
+      <div class="hero-badge">GBP Security + Management</div>
+      <h1>We Manage Your Google.<br><span>You Grow Your Business.</span></h1>
+      <p>InQik handles your entire Google Business Profile so local customers find you first. Optimization, reviews, rank tracking, and protection. All managed. All reported.</p>
+      <a href="https://inqik.com/contact/" class="hero-cta">Request Free Visibility Analysis</a>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <div class="num">46%</div>
+          <div class="label">Local search intent</div>
+        </div>
+        <div class="hero-stat">
+          <div class="num">48hr</div>
+          <div class="label">Review response</div>
+        </div>
+        <div class="hero-stat">
+          <div class="num">49</div>
+          <div class="label">GPS scan points</div>
+        </div>
+        <div class="hero-stat">
+          <div class="num">$99</div>
+          <div class="label">Starting price</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- WHAT WE DO -->
+  <section>
+    <div class="container">
+      <div class="section-badge">What We Do</div>
+      <h2>Google Business Profile Management, Done Right</h2>
+      <p class="section-subtitle">Most businesses use 30-40% of what Google offers. We take that to 100% and keep it there every single month.</p>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon" style="background: var(--blue-50); color: var(--blue-700);">🔍</div>
+          <h3>Profile Setup and Optimization</h3>
+          <p>Complete 25-point audit covering your description, photos, categories, attributes, Q&A, and verification. We fix everything. Your profile scores 100% before we start managing it. Included with every plan.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon" style="background: var(--green-100); color: var(--green-600);">📋</div>
+          <h3>Monthly Security + Management</h3>
+          <p>Regular Google Posts, every review responded within 48 hours, daily profile monitoring, fake review detection, photo updates, Q&A monitoring, and monthly performance reports. Your profile stays active, protected, and growing.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon" style="background: #f3e8ff; color: #7c3aed;">📍</div>
+          <h3>Local Rank Tracking</h3>
+          <p>We scan your ranking from 49 GPS points in a 7x7 grid across your service area. The result is a color-coded heatmap: green where you rank well, red where you are invisible. Tracked daily, reported weekly.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon" style="background: var(--amber-100); color: #b45309;">💬</div>
+          <h3>Review Response</h3>
+          <p>Professional, brand-matched responses to every Google review. AI drafts the response, a human reviews it for tone and accuracy. Negative reviews get de-escalation treatment. Sentiment tracked monthly.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon" style="background: var(--red-100); color: var(--red-500);">🛡️</div>
+          <h3>Profile Protection</h3>
+          <p>Competitors can mark your business as "permanently closed." Fake reviews can tank your rating overnight. We monitor your profile daily and respond to threats within minutes, not days.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon" style="background: #fef3c7; color: #92400e;">🏢</div>
+          <h3>Multi-Location and Franchise</h3>
+          <p>Flat discounted rates for 2+ locations. Each location gets independent strategy, optimization, and reporting. Franchise businesses get cross-location analytics, AI emotion analysis, and brand consistency monitoring.</p>
+        </div>
+      </div>
+
+      <div class="protection-box">
+        <h3>Your Profile is Under Threat. We Fight Back.</h3>
+        <p>Most business owners have no idea how vulnerable their Google listing actually is. Here is what we defend against every single day.</p>
+        <ul class="threat-list">
+          <li>Competitors suggesting your business is "permanently closed"</li>
+          <li>Fake 1-star reviews from accounts that never visited your business</li>
+          <li>Unauthorized edits to your hours, phone number, or address</li>
+          <li>Category hijacking that pushes you out of relevant searches</li>
+          <li>Photo spam and inappropriate content on your listing</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section>
+    <div class="container">
+      <div class="section-badge">Pricing</div>
+      <h2>Two Plans. Everything Included.</h2>
+      <p class="section-subtitle">No setup fees. No contracts. Professional onboarding included with every plan. Cancel anytime with 30 days notice.</p>
+
+      <div class="pricing-grid">
+        <div class="plan-card">
+          <h3>Essential</h3>
+          <div class="plan-price">$99<span>/mo</span></div>
+          <div class="plan-annual">$79/mo with annual billing</div>
+          <ul class="plan-features">
+            <li>Regular Google Posts</li>
+            <li>All reviews responded within 48 hours</li>
+            <li>Daily profile monitoring and protection</li>
+            <li>Fake review detection and flagging</li>
+            <li>Review toolkit (QR codes, templates)</li>
+            <li>Q&A monitoring and responses</li>
+            <li>Monthly photo updates</li>
+            <li>Monthly performance report (PDF)</li>
+            <li>Client dashboard access</li>
+            <li>Live support (email + chat)</li>
+            <li>Professional onboarding included</li>
+          </ul>
+        </div>
+
+        <div class="plan-card featured">
+          <div class="plan-badge">Most Popular</div>
+          <h3>Growth</h3>
+          <div class="plan-price">$199<span>/mo</span></div>
+          <div class="plan-annual">$159/mo with annual billing (was $249)</div>
+          <ul class="plan-features">
+            <li>Everything in Essential, plus:</li>
+            <li>Local Rank Tracking (5 keywords, daily)</li>
+            <li>49-point GPS rank heatmaps</li>
+            <li>5 competitor tracking and comparison</li>
+            <li>Competitor gap analysis (AI-powered)</li>
+            <li>24/7 profile protection with instant alerts</li>
+            <li>Monthly strategy analysis</li>
+            <li>Strategy Hub with team discussion</li>
+            <li>Priority support (4-hour response)</li>
+            <li>Reports in PDF and Excel</li>
+          </ul>
+        </div>
+      </div>
+
+      <p style="text-align:center; margin-top:24px; color:var(--gray-500); font-size:0.92em;">
+        <strong>Multi-location pricing:</strong> Essential $79/mo per location | Growth $159/mo per location | Annual billing saves 15%
+      </p>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section>
+    <div class="container">
+      <div class="section-badge">How It Works</div>
+      <h2>Four Steps. That's All It Takes.</h2>
+      <p class="section-subtitle">We don't overcomplicate things. Here is exactly what happens when you sign up.</p>
+
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">01</div>
+          <div class="step-content">
+            <h3>We Audit Your Profile</h3>
+            <p>25-point audit covering completeness, photos, categories, attributes, Q&A, description, service areas, and verification. You get a scorecard showing exactly what is missing and what needs work.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">02</div>
+          <div class="step-content">
+            <h3>We Fix Everything</h3>
+            <p>Description rewriting with relevant keywords. Category and attribute optimization. Professional photo uploads. Q&A section populated with real customer questions. Full verification. Most profiles reach 100% within the first week.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">03</div>
+          <div class="step-content">
+            <h3>We Manage It Every Month</h3>
+            <p>Google Posts published regularly. Every review responded within 48 hours. Profile monitored daily for unauthorized edits and fake reviews. Photos and information updated as needed. Competitors tracked and compared.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">04</div>
+          <div class="step-content">
+            <h3>We Track and Report</h3>
+            <p>Monthly performance report with profile views, direction requests, phone calls, and review metrics. Growth plan clients get GPS rank heatmaps and competitor comparison. Every client gets live dashboard access.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INDUSTRIES -->
+  <section>
+    <div class="container">
+      <div class="section-badge">Industries</div>
+      <h2>Who We Work With</h2>
+      <p class="section-subtitle">We serve local businesses across industries. If your customers search for you on Google, we can help.</p>
+
+      <div class="industries-grid">
+        <span class="industry-tag">🍽️ Restaurants and Cafes</span>
+        <span class="industry-tag">🩺 Healthcare and Dental</span>
+        <span class="industry-tag">⚖️ Legal and Accounting</span>
+        <span class="industry-tag">🏠 Real Estate</span>
+        <span class="industry-tag">🚗 Automotive</span>
+        <span class="industry-tag">✂️ Salons and Spas</span>
+        <span class="industry-tag">💪 Fitness and Wellness</span>
+        <span class="industry-tag">🔧 Home Services</span>
+        <span class="industry-tag">🐾 Veterinary Clinics</span>
+        <span class="industry-tag">🏨 Hotels and Hospitality</span>
+        <span class="industry-tag">📚 Education and Tutoring</span>
+        <span class="industry-tag">🛒 Retail</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section>
+    <div class="container">
+      <div class="section-badge">FAQ</div>
+      <h2>Common Questions</h2>
+      <p class="section-subtitle">Everything you need to know before getting started.</p>
+
+      <div class="faq-item">
+        <div class="faq-q">Do I need to do anything after signing up?</div>
+        <div class="faq-a">No. After a quick onboarding call where we learn about your business, we handle everything. You get a monthly report and can check your dashboard anytime, but there is nothing you need to do. We manage it all.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">What exactly does InQik do?</div>
+        <div class="faq-a">We make sure your business shows up when customers search on Google. We optimize your Google Business Profile, respond to all reviews, post regularly, track your local rankings, and protect you from fake reviews and competitor attacks.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Can you guarantee I will be #1 on Google?</div>
+        <div class="faq-a">No one can honestly guarantee rankings. What we guarantee: your profile will be 100% complete, all reviews responded within 48 hours, and Google Posts published regularly. These actions consistently improve visibility over time.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">How long until I see results?</div>
+        <div class="faq-a">Your profile is optimized within 5-7 days. Visibility improvements usually start within 2-3 weeks. Our rank tracking heatmaps show exactly where improvements happen over time so you can see real progress.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">What if I already have a Google Business Profile?</div>
+        <div class="faq-a">That's great. Most businesses use only 30-40% of what Google offers. We audit your existing profile and optimize everything that is missing. The improvement is usually significant and visible within weeks.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">What is the difference between Essential and Growth?</div>
+        <div class="faq-a">Essential handles all profile management: posts, reviews, monitoring, protection, and reporting. Growth adds local rank tracking heatmaps from 49 GPS points, competitor tracking, AI-powered recommendations, and 24/7 profile protection with instant alerts.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">What happens if my profile gets attacked?</div>
+        <div class="faq-a">Our monitoring catches threats immediately. Fake reviews get flagged and reported to Google with evidence. "Permanently closed" edits get reversed. You receive an incident report documenting every event and our response.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Can I cancel anytime?</div>
+        <div class="faq-a">Yes. No long-term contracts. We ask for 30 days notice. That's it.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LINKS -->
+  <section>
+    <div class="container">
+      <div class="section-badge">Connect</div>
+      <h2>Links and Resources</h2>
+
+      <div class="links-section">
+        <div class="links-grid">
+          <a href="https://inqik.com" class="link-item">
+            <span class="link-label">Website</span>
+            inqik.com
+          </a>
+          <a href="https://inqik.com/pricing/" class="link-item">
+            <span class="link-label">Plans and Pricing</span>
+            inqik.com/pricing
+          </a>
+          <a href="https://inqik.com/services/" class="link-item">
+            <span class="link-label">All Services</span>
+            inqik.com/services
+          </a>
+          <a href="https://inqik.com/features/" class="link-item">
+            <span class="link-label">Platform Features</span>
+            inqik.com/features
+          </a>
+          <a href="https://inqik.com/about/" class="link-item">
+            <span class="link-label">About InQik</span>
+            inqik.com/about
+          </a>
+          <a href="https://inqik.com/contact/" class="link-item">
+            <span class="link-label">Get In Touch</span>
+            inqik.com/contact
+          </a>
+          <a href="https://www.youtube.com/@InQik" class="link-item">
+            <span class="link-label">YouTube</span>
+            youtube.com/@InQik
+          </a>
+          <a href="https://www.linkedin.com/company/inqik" class="link-item">
+            <span class="link-label">LinkedIn</span>
+            linkedin.com/company/inqik
+          </a>
+          <a href="https://www.facebook.com/InQik.com" class="link-item">
+            <span class="link-label">Facebook</span>
+            facebook.com/InQik
+          </a>
+          <a href="https://www.instagram.com/InQikHQ" class="link-item">
+            <span class="link-label">Instagram</span>
+            instagram.com/InQikHQ
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2026 InQik. Google Business Profile Security + Management for Local Businesses.</p>
+    <p style="margin-top:8px;">
+      <a href="https://inqik.com">inqik.com</a> &middot;
+      <a href="mailto:support@inqik.com">support@inqik.com</a> &middot;
+      <a href="https://wa.me/12763003233">WhatsApp</a>
+    </p>
+  </footer>
+
+</body>
+</html>
