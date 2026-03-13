@@ -34,4 +34,73 @@ No setup fees. No contracts. Professional onboarding included. Cancel anytime.
 1. **We Audit Your Profile** - 25-point audit covering completeness, photos, categories, attributes, Q&A, description, and verification status
 2. **We Fix Everything** - Description rewriting, category optimization, photo uploads, Q&A population, full verification
 3. **We Manage It Monthly** - Google Posts, review responses, daily monitoring, fake review detection, competitor tracking
-4. **We Track and Report** - Monthly report with profile views, direction requests, calls, review metrics, and rank heatma
+4. **We Track and Report** - Monthly report with profile views, direction requests, calls, review metrics, and rank heatmaps
+
+## Industries We Serve
+
+Restaurants and Cafes · Healthcare and Dental · Legal and Accounting · Real Estate · Automotive · Salons and Spas · Fitness and Wellness · Home Services · Veterinary Clinics · Hotels and Hospitality · Education and Tutoring · Retail
+
+## Why InQik
+
+- **Fully managed** - We do the work, you see the results
+- **No contracts** - Cancel anytime with 30 days notice
+- **Transparent reporting** - Monthly reports showing exactly what we did and what improved
+- **Profile protection** - Daily monitoring against fake reviews, unauthorized edits, and competitor attacks
+- **Data-driven** - Rank heatmaps from 49 GPS points, competitor tracking, AI-powered recommendations
+- **Fast onboarding** - Profile optimized to 100% within the first week
+
+## Links
+
+| | |
+|---|---|
+| 🌐 **Website** | [inqik.com](https://inqik.com) |
+| 💰 **Pricing** | [inqik.com/pricing](https://inqik.com/pricing/) |
+| 🛠️ **Services** | [inqik.com/services](https://inqik.com/services/) |
+| ⚡ **Features** | [inqik.com/features](https://inqik.com/features/) |
+| 📖 **About** | [inqik.com/about](https://inqik.com/about/) |
+| 📞 **Contact** | [inqik.com/contact](https://inqik.com/contact/) |
+| ▶️ **YouTube** | [youtube.com/@InQik](https://www.youtube.com/@InQik) |
+| 💼 **LinkedIn** | [linkedin.com/company/inqik](https://www.linkedin.com/company/inqik) |
+| 📘 **Facebook** | [facebook.com/InQik](https://www.facebook.com/InQik.com) |
+| 📸 **Instagram** | [instagram.com/InQikHQ](https://www.instagram.com/InQikHQ) |
+
+## Contact
+
+- **Email:** support@inqik.com
+- **Phone (Global):** +(1) 276 300 3233
+- **Phone (India):** +91 8904267565
+- **WhatsApp:** [wa.me/12763003233](https://wa.me/12763003233)
+
+---
+
+*InQik - Google Business Profile Security + Management for Local Businesses*
+```
+
+---
+
+## Repo About Section (Sidebar Settings)
+
+On the repo page, click the **gear icon** next to "About" in the right sidebar.
+
+**Description:**
+```
+Google Business Profile security and management for local businesses. Profile optimization, review response, rank tracking, and protection. Plans from $99/mo.
+```
+
+**Website:**
+```
+https://inqik.com
+```
+
+**Topics (add each one separately, press Enter after each):**
+```
+google-business-profile
+local-seo
+gbp-management
+review-management
+google-maps
+rank-tracking
+local-marketing
+profile-protection
+fake-review-detection
+small-business
